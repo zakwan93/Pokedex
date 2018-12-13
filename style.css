@@ -1,6 +1,8 @@
 body, html {
   height: 100%;
   margin: 0;
+  font-family: 'ZCOOL KuaiLe', cursive;
+
 }
 
 .bg {
@@ -22,7 +24,7 @@ body, html {
 
   /* Full height */
   height: 100%; 
-  
+
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
