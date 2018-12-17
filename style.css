@@ -18,27 +18,10 @@ body, html {
 }
 
 .pokemon{
-	/* The image used */
   background-image: url("images/start_point.jpg");
-  /* Full height */
   height: 2200px; 
   width: 2200px;
-  /* Center and scale the image nicely */
-  /*background-position: center;*/
   background-repeat: repeat;
-  background-size: cover;
-}
-
-.pokemon1{
-	/* The image used */
-  background-image: url("images/Snapseed 4.jpg");
-
-  /* Full height */
-  height: 100%; 
-  max-width: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -59,23 +42,16 @@ body, html {
 }
 
 #mycard{
-	/*max-width: 35%;*/
 	background-color: transparent;
 	border: none;
 }
 
-/*.map{
-	position: absolute;
-}
-*/
 .bulbasaur{
 	position: relative;
 	display: inline-block;
 	opacity: 0;
-	/*width: 100%;*/
 	top: 350px;
 	left: 1400px;
-	/*visibility: hidden;*/
 }
 
 .bul{
@@ -84,28 +60,22 @@ body, html {
 	top: 350px;
 	left: 1400px;
 	display: inline-block;
-	/*visibility: visible;*/
 }
 
 .charmander{
 	position: relative;
 	opacity: 0;
-	/*left: 40%;*/
 	top: 0px;
 	left: 100px;
 	display: inline-block;
-	
-	/*top: 300px;*/	
 }
 
 .charm{
-	position: relative;
-	/*left: 40%;*/	
+	position: relative;	
 	top: 0px;
 	left: 100px;
 	opacity: 1;
 	display: inline-block;
-	/*top: 300px;*/
 }
 
 .Squirtle{
