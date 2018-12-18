@@ -43,7 +43,7 @@ let zakwan = new Trainer("Zakwan",[myBulbasaur,myCharmander,mySquirtle, myLapras
 
 // Axios call for each pokemon using name
 function getPokemonStats(name,id){
-	axios.get("http://fizal.me/pokeapi/api/v2/id/"+ id +".json")
+	axios.get("https://fizal.me/pokeapi/api/v2/id/"+ id +".json")
 	.then(function (myResponse){
 		// console.log(myResponse);
 		let data = myResponse.data;
