@@ -6,8 +6,8 @@ body, html {
 }
 
 #fade{
-	/*display: none;*/
 	animation: fadeIn 3s forwards;
+}
 }
 
 @keyframes fadeIn{
@@ -56,10 +56,6 @@ body, html {
 	padding-left: 42%;
 }
 
-/*.backgrounnd a img:hover{
-	background-image: url("https://cdn-images-1.medium.com/max/2000/0*ZLujw1b18CnMFxFa.jpg");
-}	*/
-
 .states{
 	animation: slide 2s forwards;
 }
@@ -79,10 +75,6 @@ body, html {
 	100%{
 		opacity: 0;
 	}
-}
-
-.data{
-	/*animation: fadeIn 3s forwards;*/
 }
 
 @keyframes slide{
