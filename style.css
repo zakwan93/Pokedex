@@ -1,8 +1,22 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: 'ZCOOL KuaiLe', cursive;
+  font-family: 'VT323', monospace;
 
+}
+
+#fade{
+	/*display: none;*/
+	animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 
 .bg {
@@ -17,6 +31,18 @@ body, html {
   background-size: cover;
 }
 
+.bg1{
+	/* The image used */
+  background-image: url("https://i.ytimg.com/vi/6ZyEwWdxeVY/maxresdefault.jpg");
+
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 .pokemon{
   background-image: url("images/start_point.jpg");
   height: 2200px; 
@@ -29,6 +55,11 @@ body, html {
 	padding-top: 38%;
 	padding-left: 42%;
 }
+
+/*.backgrounnd a img:hover{
+	background-image: url("https://cdn-images-1.medium.com/max/2000/0*ZLujw1b18CnMFxFa.jpg");
+}	*/
+
 
 .title{
 	font-size: 40px;
@@ -65,15 +96,15 @@ body, html {
 .charmander{
 	position: relative;
 	opacity: 0;
-	top: 0px;
-	left: 100px;
+	top: 100px;
+	left: 350px;
 	display: inline-block;
 }
 
 .charm{
 	position: relative;	
-	top: 0px;
-	left: 100px;
+	top: 100px;
+	left: 350px;
 	opacity: 1;
 	display: inline-block;
 }

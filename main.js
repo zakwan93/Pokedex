@@ -36,6 +36,7 @@ class Pokemon{
 let myBulbasaur = new Pokemon('bulbasaur',1);
 let myCharmander = new Pokemon('charmander',4);
 let mySquirtle = new Pokemon('squirtle',7);
+let ninja = new Pokemon('Greninja', 658);
 
 // Traier object
 let zakwan = new Trainer("Zakwan",[myBulbasaur,myCharmander,mySquirtle]);
@@ -87,6 +88,7 @@ function getPokemonStats(name,id){
 getPokemonStats('bulbasaur',1);
 getPokemonStats('charmander',4);
 getPokemonStats('squirtle',7);
+console.log(getPokemonStats('Greninja', 658));
 
 
 // Functionn to show data on HTML
@@ -100,13 +102,13 @@ function showStates(myPokemon, id){
 	let Defence = container.querySelector(".Defence");
 	let Abilities = container.querySelector(".Abilities");
 	let Moves = container.querySelector(".Moves")
-	Name.innerHTML = myPokemon.name;
-	Height.innerHTML = myPokemon.height;
-	HP.innerHTML = myPokemon.hp;
-	Attack.innerHTML = myPokemon.attack;
-	Defence.innerHTML = myPokemon.defence;
-	Abilities.innerHTML = myPokemon.abilities;
-	Moves.innerHTML = myPokemon.moves;
+	Name.innerHTML = `Name - ${myPokemon.name}`;
+	Height.innerHTML = `Height - ${myPokemon.height}`;
+	HP.innerHTML = `HP - ${myPokemon.hp}`;
+	Attack.innerHTML = `Attack - ${myPokemon.attack}`;
+	Defence.innerHTML = `Defence - ${myPokemon.defence}`;
+	Abilities.innerHTML = `Abilities - ${myPokemon.abilities}`;
+	Moves.innerHTML = `Moves - ${myPokemon.moves}`;
 }
 
 
