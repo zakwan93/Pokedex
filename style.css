@@ -60,7 +60,39 @@ body, html {
 	background-image: url("https://cdn-images-1.medium.com/max/2000/0*ZLujw1b18CnMFxFa.jpg");
 }	*/
 
+.states{
+	animation: slide 2s forwards;
+}
 
+.image{
+	animation: blinkimage 5s infinite;
+	animation-delay: 10s;
+}
+
+@keyframes blinkimage{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.2;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+.data{
+	/*animation: fadeIn 3s forwards;*/
+}
+
+@keyframes slide{
+	from{
+		left: 0;
+	}
+	to{
+		left: 600;
+	}
+}
 .title{
 	font-size: 40px;
 	text-transform: uppercase;
@@ -121,6 +153,22 @@ body, html {
 	position: relative;
 	left: 1600px;
 	top: 1600px;
+	opacity: 1;
+	display: inline-block;
+}
+
+.lapres{
+	position: relative;
+	left: -600px;
+	top: 1500px;
+	opacity: 0;
+	display: inline-block;
+}
+
+.lap{
+	position: relative;
+	left: -600px;
+	top: 1500px;
 	opacity: 1;
 	display: inline-block;
 }

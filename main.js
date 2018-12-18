@@ -36,10 +36,10 @@ class Pokemon{
 let myBulbasaur = new Pokemon('bulbasaur',1);
 let myCharmander = new Pokemon('charmander',4);
 let mySquirtle = new Pokemon('squirtle',7);
-let ninja = new Pokemon('Greninja', 658);
+let myLapras = new Pokemon('lapras', 131);
 
 // Traier object
-let zakwan = new Trainer("Zakwan",[myBulbasaur,myCharmander,mySquirtle]);
+let zakwan = new Trainer("Zakwan",[myBulbasaur,myCharmander,mySquirtle, myLapras]);
 
 // Axios call for each pokemon using name
 function getPokemonStats(name,id){
@@ -60,10 +60,10 @@ function getPokemonStats(name,id){
 
 		// Getting all move of each pokemon 
 		let myMoves = [];
-		myPokemon.moves = data.moves
+		let moves = data.moves
 		// goign through the length of moves array and storing the name of each movr in topmoves
-		for (var i=0;i<myPokemon.moves.length;i++){
-				var topmoves = myPokemon.moves[i].move.name;
+		for (var i=0;i<moves.length;i++){
+				var topmoves = moves[i].move.name;
 				// checking if topmoves length is less than 5 
 				// and push that first 5 moves in a myMoves array	
 				if(topmoves.length <5){
@@ -88,7 +88,8 @@ function getPokemonStats(name,id){
 getPokemonStats('bulbasaur',1);
 getPokemonStats('charmander',4);
 getPokemonStats('squirtle',7);
-console.log(getPokemonStats('Greninja', 658));
+getPokemonStats('lapras',131);
+// console.log(getPokemonStats('Greninja', 658));
 
 
 // Functionn to show data on HTML
@@ -114,26 +115,47 @@ function showStates(myPokemon, id){
 
 
 var bulbasaur = document.getElementById("bulba");
+bulbasaur.classList.add("image");
 bulbasaur.addEventListener('click', function(){
 	bulbasaur.classList.remove("bulbasaur");
+	bulbasaur.classList.remove("image");
 	bulbasaur.classList.add("bul");
+	bulbasaur.classList.add("states");
 	let pokemon = zakwan.get("bulbasaur");
 	showStates(pokemon, 'bulba');
 })
 
 var charmander = document.getElementById("charm");
+charmander.classList.add("image");
 charmander.addEventListener('click',function(){
 	charmander.classList.remove("charmander");
+	charmander.classList.remove("image");
 	charmander.classList.add("charm");
+	charmander.classList.add("states");
+	// charmander.classList.add("data");
 	let pokemon = zakwan.get("charmander");
 	showStates(pokemon, 'charm');
 })
 
 var Squi = document.getElementById("Squir");
+Squi.classList.add("image");
 Squi.addEventListener('click',function(){
 	Squi.classList.remove("Squirtle");
+	Squi.classList.remove("image");
 	Squi.classList.add("Squir");
+	Squi.classList.add("states");
 	let pokemon = zakwan.get("squirtle");
 	showStates(pokemon, 'Squir');
+})
+
+var lapras = document.getElementById("lap");
+lapras.classList.add("image");
+lapras.addEventListener('click',function(){
+	lapras.classList.remove("lapres");
+	lapras.classList.remove("image");
+	lapras.classList.add("lap");
+	lapras.classList.add("states");
+	let pokemon = zakwan.get("lapras");
+	showStates(pokemon, 'lap')
 })
 
