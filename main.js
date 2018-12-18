@@ -79,8 +79,6 @@ function getPokemonStats(name,id){
 		myPokemon.defence = data.stats[3].base_stat
 		myPokemon.abilities = myabilities
 		myPokemon.moves = myMoves
-		
-		// console.log(myMoves)
 	})
 }
 
