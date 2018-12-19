@@ -46,7 +46,7 @@ body, html {
 .pokemon{
   background-image: url("images/start_point.jpg");
   height: 2200px; 
-  width: 2200px;
+  width: 2400px;
   background-repeat: repeat;
   background-size: cover;
 }
@@ -106,14 +106,14 @@ body, html {
 	display: inline-block;
 	opacity: 0;
 	top: 350px;
-	left: 1400px;
+	left: 1600px;
 }
 
 .bul{
 	position: relative;
 	opacity: 1;
 	top: 350px;
-	left: 1400px;
+	left: 1800px;
 	display: inline-block;
 }
 
@@ -121,14 +121,14 @@ body, html {
 	position: relative;
 	opacity: 0;
 	top: 100px;
-	left: 350px;
+	left: 50px;
 	display: inline-block;
 }
 
 .charm{
 	position: relative;	
 	top: 100px;
-	left: 350px;
+	left: 50px;
 	opacity: 1;
 	display: inline-block;
 }
